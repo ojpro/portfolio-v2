@@ -1,19 +1,19 @@
 export default function Navbar() {
   return (
     <>
-      <nav className="">
+      <nav className="flex flex-row justify-evenly border leading-8 py-2">
         <a href="#">Logo</a>
-        <ul className="">
-          <li>
+        <ul className="flex flex-row justify-evenly gap-3">
+          <li className="py-0.5 px-2">
             <a href="#">About</a>
           </li>
-          <li>
+          <li className="py-0.5 px-2">
             <a href="#">Work</a>
           </li>
-          <li>
+          <li className="py-0.5 px-2">
             <a href="#">Testimonials</a>
           </li>
-          <li>
+          <li className="py-0.5 px-2">
             <a href="#">Contact</a>
           </li>
         </ul>
