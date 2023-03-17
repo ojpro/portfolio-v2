@@ -40,7 +40,7 @@ export default function Contact() {
                     <form action="" className="flex flex-col justify-items-stretch gap-4 bg-blue-100 p-6 rounded w-full">
                         <label htmlFor="">
                             <span className="block">Name : </span>
-                            <input type="text" className="py-2 px-2.5 rounded w-full outline-2 outline-blue-500"/>
+                            <input type="text" className="py-2 px-2.5 rounded w-full shadow outline-2 outline-blue-500"/>
                         </label>
                         <label htmlFor="">
                             <span className="block">Email : </span>
