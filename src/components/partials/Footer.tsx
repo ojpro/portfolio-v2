@@ -3,7 +3,7 @@ export default function Footer() {
         <>
             <footer className="bg-gray-900 pt-6 pb-2  mt-6">
                 {/* <> Links </> */}
-                <div className="container mx-auto flex flex-row flex-wrap justify-start gap-4">
+                <div className="w-full lg:w-4/6 mx-auto flex flex-row flex-wrap justify-start gap-4">
                     <ul>
                         <li>
                             <a href="#" className="text-gray-300 hover:text-white">Home</a>
