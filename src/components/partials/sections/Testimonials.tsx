@@ -2,7 +2,7 @@ export default function Testimonials() {
     return (
         <>
             <a href="#" id="testimonials"></a>
-            <section>
+            <section className="py-28">
                 <h2 className="text-2xl text-center font-bold">What People Says?</h2>
                 {/* <> Cards </> */}
                 <div>

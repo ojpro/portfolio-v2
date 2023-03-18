@@ -2,7 +2,7 @@ export default function Work() {
   return (
     <>
       <a href="#" id="work"></a>
-      <section className="container mx-auto">
+      <section className="container mx-auto py-28">
         <h2 className="text-2xl text-center">My Work</h2>
         {/* <> Filters </> */}
         <div>

@@ -2,7 +2,7 @@ export default function About() {
   return (
     <>
       <a href="#" id="about"></a>
-      <section className="container mx-auto my-6">
+      <section className="container mx-auto py-28">
         <h2 className="text-center text-2xl font-bold my-2">Who Am I?</h2>
         <div className="flex flex-row flex-wrap justify-evenly items-center">
           <img src="https://source.unsplash.com/random/200x200/?person" className="rounded-full" alt="My Picture" />
