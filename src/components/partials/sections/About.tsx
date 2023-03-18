@@ -13,13 +13,13 @@ export default function About() {
               dolor.
             </p>
             <div className="flex flex-row flex-nowrap gap-2 justify-start mt-4">
-              <a href="#" className="py-2.5 px-4 bg-blue-500 text-white">Contact Me</a>
+              <a href="#contact" className="py-2.5 px-4 bg-blue-500 text-white">Contact Me</a>
               <a href="#" className="py-2.5 px-4 border border-blue-500 text-blue-500">My Resume</a>
             </div>
           </div>
         </div>
       </section>
-      <div className="bg-gray-100 h-1 w-full my-2"></div>
+      <div className="bg-gray-100 dark:bg-gray-800 h-1 w-full my-2"></div>
     </>
   );
 }

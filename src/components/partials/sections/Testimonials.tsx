@@ -8,7 +8,7 @@ export default function Testimonials() {
                 <div>
                     <ul className="flex flex-row flex-wrap justify-evenly items-center p-2">
                         {/* <> Card </> */}
-                        <li className="bg-gray-100 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
+                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
                             <div>
                                 <span>&quot;</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -23,7 +23,7 @@ export default function Testimonials() {
                             </div>
                         </li>
                         {/* <> Card </> */}
-                        <li className="bg-gray-100 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
+                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
                             <div>
                                 <span>&quot;</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -38,7 +38,7 @@ export default function Testimonials() {
                             </div>
                         </li>
                         {/* <> Card </> */}
-                        <li className="bg-gray-100 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
+                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
                             <div>
                                 <span>&quot;</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -53,7 +53,7 @@ export default function Testimonials() {
                             </div>
                         </li>
                         {/* <> Card </> */}
-                        <li className="bg-gray-100 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
+                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
                             <div>
                                 <span>&quot;</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

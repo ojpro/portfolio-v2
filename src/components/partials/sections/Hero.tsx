@@ -11,10 +11,10 @@ export default function HeroSection() {
           voluptatem, in perferendis inventore cumque?
         </p>
         <div className="mt-6">
-          <a href="#" className="py-2.5 px-4 bg-blue-500 text-white">let's Start Working</a>
+          <a href="#contact" className="py-2.5 px-4 bg-blue-500 text-white">let's Start Working</a>
         </div>
       </div>
-      <div className="w-full h-1 bg-gray-200 -rotate-1">
+      <div className="w-full h-1 bg-gray-200 dark:bg-gray-800">
           <FiChevronDown className="text-3xl mx-auto cursor-pointer"></FiChevronDown>
       </div>
     </section>

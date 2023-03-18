@@ -40,7 +40,7 @@ export default function Contact() {
                     {/* <> Form </> */}
                     <div className="w-full md:w-8/12 lg:w-5/12 xl:w-1/3">
                         <form action=""
-                              className="flex flex-col justify-items-stretch gap-4 bg-blue-100 p-6 rounded w-full">
+                              className="flex flex-col justify-items-stretch gap-4 bg-blue-100 dark:bg-gray-800 p-6 rounded-md w-full">
                             <label htmlFor="">
                                 <span className="block">Name : </span>
                                 <input type="text"
