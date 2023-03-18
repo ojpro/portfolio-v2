@@ -1,6 +1,7 @@
 export default function About() {
   return (
     <>
+      <a href="#" id="about"></a>
       <section className="container mx-auto my-6">
         <h2 className="text-center text-2xl font-bold my-2">Who Am I?</h2>
         <div className="flex flex-row flex-wrap justify-evenly items-center">

@@ -5,16 +5,16 @@ export default function Navbar() {
         <a href="#" className="text-lg font-bold">Logo</a>
         <ul className="flex flex-row justify-evenly gap-3">
           <li>
-            <a href="#" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">About</a>
+            <a href="#about" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">About</a>
           </li>
           <li>
-            <a href="#" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">Work</a>
+            <a href="#work" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">Work</a>
           </li>
           <li>
-            <a href="#" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">Testimonials</a>
+            <a href="#testimonials" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">Testimonials</a>
           </li>
           <li>
-            <a href="#" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">Contact</a>
+            <a href="#contact" className="inline-block py-0.5 px-2.5 rounded hover:bg-gray-100 dark:hover:bg-gray-900 dark:hover:text-white">Contact</a>
           </li>
         </ul>
       </nav>
