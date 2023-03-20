@@ -4,18 +4,12 @@ import About from "@/components/partials/sections/About";
 import Work from "@/components/partials/sections/Work";
 import Testimonials from "@/components/partials/sections/Testimonials";
 import Contact from "@/components/partials/sections/Contact";
-import Navbar from "@/components/partials//Navbar";
 import HeroSection from "@/components/partials/sections/Hero";
 
 export default function Home() {
   return (
     <>
       <BlankLayout>
-
-        {/* <> Navbar </> */}
-        <Navbar></Navbar>
-
-
         {/* <> Header </> */}
         <header>
           {/* <> Hero Section </> */}
