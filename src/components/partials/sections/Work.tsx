@@ -10,26 +10,6 @@ export default function Work() {
             <a href="#" id="work"></a>
             <section className="container mx-auto py-28 px-8">
                 <h2 className="text-2xl text-center my-10">My Work</h2>
-                {/* <> Filters </> */}
-                <div className="my-8">
-                    <ul className="flex flex-row flex-wrap justify-center items-center gap-4">
-                        <li><a href="#"
-                               className="py-1.5 px-3 rounded dark:bg-gray-600 border border-transparent hover:border-gray-600 delay-100 ease-linear">All</a>
-                        </li>
-                        <li><a href="#"
-                               className="py-1.5 px-3 rounded dark:bg-gray-800/70 border border-transparent hover:border-gray-600 delay-100 ease-linear">Websites</a>
-                        </li>
-                        <li><a href="#"
-                               className="py-1.5 px-3 rounded dark:bg-gray-800/70 border border-transparent hover:border-gray-600 delay-100 ease-linear">Apps</a>
-                        </li>
-                        <li><a href="#"
-                               className="py-1.5 px-3 rounded dark:bg-gray-800/70 border border-transparent hover:border-gray-600 delay-100 ease-linear">Games</a>
-                        </li>
-                        <li><a href="#"
-                               className="py-1.5 px-3 rounded dark:bg-gray-800/70 border border-transparent hover:border-gray-600 delay-100 ease-linear">Scripts</a>
-                        </li>
-                    </ul>
-                </div>
 
                 {/* <> Projects Card </> */}
                 <div className="w-11/12 mx-auto">
