@@ -5,7 +5,7 @@ import {BiChevronRight} from "react-icons/bi";
 
 export default function ProjectCard(props: { title: string, description: string, image: StaticImageData, bgFrom: string, bgTo: string }) {
     return (
-        <li className={"grid lg:grid-cols-2 p-1 group overflow-hidden rounded-xl bg-gradient-to-bl from-[" + props.bgFrom + "] to-[" + props.bgTo + "]"}>
+        <li className={"grid lg:grid-cols-2 p-1 group overflow-hidden rounded-xl bg-gradient-to-bl " + props.bgFrom + " " + props.bgTo}>
             <div className="self-center container w-10/12 mx-auto lg:group-even:order-2">
                 <h3 className="text-3xl font-bold my-4">{props.title}</h3>
                 <p>{props.description}</p>

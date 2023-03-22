@@ -18,14 +18,14 @@ export default function Work() {
                 <div className="w-11/12 mx-auto">
                     <ul className="flex flex-col justify-between gap-24">
                         <ProjectCard title="Project Title" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
-                                    eum neque nulla quis saepe tempore." image={steakhouse} bgFrom="#F3B194"
-                                     bgTo="#F30103"></ProjectCard>
+                                    eum neque nulla quis saepe tempore." image={steakhouse} bgFrom="from-[#F3B194]"
+                                     bgTo="to-[#F30103]"></ProjectCard>
                         <ProjectCard title="Project Title" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
-                                    eum neque nulla quis saepe tempore." image={executive} bgFrom="#A2A0FE"
-                                     bgTo="#27187E"></ProjectCard>
+                                    eum neque nulla quis saepe tempore." image={executive} bgFrom="from-[#A2A0FE]"
+                                     bgTo="to-[#27187E]"></ProjectCard>
                         <ProjectCard title="Project Title" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
-                                    eum neque nulla quis saepe tempore." image={coliving} bgFrom="#EA4E2E"
-                                     bgTo="#EA720C"
+                                    eum neque nulla quis saepe tempore." image={coliving} bgFrom="from-[#EA4E2E]"
+                                     bgTo="to-[#EA720C]"
                         ></ProjectCard>
                     </ul>
                 </div>
