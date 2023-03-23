@@ -8,7 +8,9 @@ export default function Testimonials() {
                 <h2 className="text-5xl font-bold text-center mb-20 mt-10">What People Says?</h2>
                 {/* <> Cards </> */}
                 <div>
-                    <ul className="p-2 even:rotate-1 odd:-rotate-1">
+                    <ul className="p-2 flex flex-row flex-wrap gap-24">
+                        <TestimonialCard></TestimonialCard>
+                        <TestimonialCard></TestimonialCard>
                         <TestimonialCard></TestimonialCard>
                     </ul>
                 </div>
