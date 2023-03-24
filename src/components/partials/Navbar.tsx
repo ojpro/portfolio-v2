@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <>
-      <nav className="flex flex-row justify-evenly items-center shadow-sm leading-8 py-3 sticky top-0 left-0 right-0 border-y border-gray-800 dark:bg-gray-900 z-50">
+      <nav className="flex flex-row justify-evenly items-center shadow backdrop-blur-lg dark:bg-opacity-50 leading-8 py-3 sticky top-0 left-0 right-0 dark:bg-gray-900 z-50">
         <a href="#" className="text-lg font-bold">Logo</a>
         <ul className="flex flex-row justify-evenly gap-3 group">
           <li>
