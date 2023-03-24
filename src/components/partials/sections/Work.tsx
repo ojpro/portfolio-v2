@@ -12,7 +12,7 @@ export default function Work() {
         <>
             <a href="#" id="work"></a>
             <section className="container mx-auto px-8">
-                <h2 className="text-5xl font-bold text-center mb-20 mt-10">My Work</h2>
+                <h2 className="text-5xl font-bold text-center mb-20 pt-28">My Work</h2>
 
                 {/* <> Projects Card </> */}
                 <div className="w-11/12 mx-auto">
