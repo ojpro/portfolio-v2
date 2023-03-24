@@ -11,7 +11,7 @@ export default function About() {
             <section className="min-h-screen relative">
                 <a href="#" id="about"></a>
                 <div className="m-20">
-                    <h2 className="text-5xl font-bold text-center mb-20 mt-10">Who Am I?</h2>
+                    <h2 className="text-5xl font-bold text-center mb-20 pt-28">Who Am I?</h2>
                     <div
                         className="container mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center min-h-full">
                         <div className="max-w-2xl flex flex-col justify-between gap-4">
