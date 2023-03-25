@@ -5,8 +5,8 @@ export default function Contact() {
     return (
         <>
             <a href="#" id="contact"></a>
-            <section className="">
-                <div className="flex flex-row flex-wrap justify-evenly gap-8 p-4 container mx-auto">
+            <section>
+                <div className="flex flex-row flex-wrap justify-evenly gap-8 p-4 container mx-auto my-36">
                     {/* <> Content </> */}
                     <div className="max-w-xl flex flex-col justify-around gap-4 p-8 md:p-2 container">
                         <div>
@@ -45,23 +45,23 @@ export default function Contact() {
                     </div>
 
                     {/* <> Form </> */}
-                    <div className="">
+                    <div>
                         <form action=""
                               className="flex flex-col flex-nowrap justify-start items-center gap-6 w-96">
                             <label htmlFor="name" className="flex flex-col gap-2 w-full">
-                                <span className="">Name </span>
+                                <span>Name </span>
                                 <input type="text"
                                        className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
                                        id="name" required/>
                             </label>
                             <label htmlFor="email" className="flex flex-col gap-2 w-full">
-                                <span className="">Email </span>
+                                <span>Email </span>
                                 <input type="email"
                                        className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
                                        id="email" required/>
                             </label>
                             <label htmlFor="message" className="flex flex-col gap-2 w-full">
-                                <span className="">Message </span>
+                                <span>Message </span>
                                 <textarea name="" id="message"
                                           className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600" required></textarea>
                             </label>
