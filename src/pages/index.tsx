@@ -5,33 +5,37 @@ import Work from "@/components/partials/sections/Work";
 import Testimonials from "@/components/partials/sections/Testimonials";
 import Contact from "@/components/partials/sections/Contact";
 import HeroSection from "@/components/partials/sections/Hero";
+import Navbar from "@/components/partials/Navbar";
 
 export default function Home() {
-  return (
-    <>
-      <BlankLayout>
-        {/* <> Header </> */}
-        <header>
-          {/* <> Hero Section </> */}
-          <HeroSection></HeroSection>
-        </header>
+    return (
+        <>
+            <BlankLayout>
+                {/* <> Navbar </> */}
+                <Navbar></Navbar>
+
+                {/* <> Header </> */}
+                <header>
+                    {/* <> Hero Section </> */}
+                    <HeroSection></HeroSection>
+                </header>
 
 
-        {/* <> About Section </> */}
-        <About></About>
+                {/* <> About Section </> */}
+                <About></About>
 
-        {/* <> Work Section </> */}
-        <Work></Work>
+                {/* <> Work Section </> */}
+                <Work></Work>
 
-        {/* <> Testimonials </> */}
-        <Testimonials></Testimonials>
+                {/* <> Testimonials </> */}
+                <Testimonials></Testimonials>
 
-        {/* <> Contact </> */}
-        <Contact></Contact>
+                {/* <> Contact </> */}
+                <Contact></Contact>
 
-        {/* <> Footer </> */}
-        <Footer></Footer>
-      </BlankLayout>
-    </>
-  );
+                {/* <> Footer </> */}
+                <Footer></Footer>
+            </BlankLayout>
+        </>
+    );
 }
