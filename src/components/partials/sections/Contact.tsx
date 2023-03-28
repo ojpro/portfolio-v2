@@ -27,7 +27,7 @@ export default function Contact() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/heyojpro">
                                     <FiInstagram className="w-6 h-6 hover:fill-white hover:text-black"></FiInstagram>
                                 </a>
                             </li>
