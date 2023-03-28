@@ -17,13 +17,13 @@ export default function Work() {
                 {/* <> Projects Card </> */}
                 <div className="w-11/12 mx-auto">
                     <ul className="flex flex-col justify-between gap-24">
-                        <ProjectCard title="Project Title" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
+                        <ProjectCard title="SteakHouse" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
                                     eum neque nulla quis saepe tempore." image={steakhouse} bgFrom="from-[#F3B194]"
                                      bgTo="to-[#F30103]"></ProjectCard>
-                        <ProjectCard title="Project Title" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
+                        <ProjectCard title="Executive" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
                                     eum neque nulla quis saepe tempore." image={executive} bgFrom="from-[#A2A0FE]"
                                      bgTo="to-[#27187E]"></ProjectCard>
-                        <ProjectCard title="Project Title" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
+                        <ProjectCard title="Coliving" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
                                     eum neque nulla quis saepe tempore." image={coliving} bgFrom="from-[#EA4E2E]"
                                      bgTo="to-[#EA720C]"
                         ></ProjectCard>
