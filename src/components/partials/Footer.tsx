@@ -1,36 +1,12 @@
+import {FaHeart} from "react-icons/fa";
+import {RiCreativeCommonsFill} from "react-icons/ri";
+
 export default function Footer() {
     return (
         <>
-            <footer className="bg-black pt-6 pb-2 mt-6">
-                {/* <> Links </> */}
-                <div className="w-full lg:w-4/6 mx-auto flex flex-row flex-wrap justify-start gap-4">
-                    <ul>
-                        <li>
-                            <a href="#" className="text-gray-300 hover:text-white">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-gray-300 hover:text-white">Project</a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-gray-300 hover:text-white">Contact</a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <a href="#" className="text-gray-300 hover:text-white">Sitemap</a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-gray-300 hover:text-white">Privacy</a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-gray-300 hover:text-white">Report</a>
-                        </li>
-                    </ul>
-                </div>
-
-                {/* <> Right </> */}
-                <p className="text-center text-white"> Copy Rights &copy; 2023 </p>
+            <footer className="p-4 bg-black/20">
+                {/* <> Copy Rights </> */}
+                <p className="text-center text-white"> Make with <FaHeart className="inline-block mx-2 text-red-500 hover:animate-ping"></FaHeart> | <RiCreativeCommonsFill className="inline-block mx-2 text-xl" title="Creative Common Attribution - (Your are free to use this website + attribution)"></RiCreativeCommonsFill> rights </p>
             </footer>
         </>
     );
