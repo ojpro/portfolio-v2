@@ -21,7 +21,7 @@ export default function About() {
                                     className="relative inline-block after:absolute after:pointer-events-none after:w-full after:h-2 after:-bottom-1 after:left-0 after:bg-yellow-400  after:bg-opacity-90 after:-z-10 z-10 after:rounded-sm after:-rotate-1">business goal.</span>
                                 </h4>
                                 <p className="text-gray-200 text-lg">
-                                I&apos;m Oussama, a Full-Stack Developer. I work as a freelancer, using my skills to build my clients' ideas. As a Developer, I am passionate about problem-solving, planning, and designing. In my spare time, I enjoy playing chess, drawing, and listening to Spotify.
+                                I&apos;m Oussama, a Full-Stack Developer. I work as a freelancer, using my skills to build my clients&apos; ideas. As a Developer, I am passionate about problem-solving, planning, and designing. In my spare time, I enjoy playing chess, drawing, and listening to Spotify.
                                 </p>
                             </div>
                             <div className="flex flex-row flex-nowrap gap-4 justify-start mt-4">
