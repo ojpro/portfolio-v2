@@ -15,28 +15,28 @@ export default function SplashScreen() {
                     }}
                                  transition={{ease: "linear", duration: 2, repeat: Infinity}}>
                         <span
-                            className="bg-gray-200 border-[6px] border-gray-600 w-9 h-9 inline-block rounded-full rounded-br-none drop-shadow-lg"></span>
+                            className="bg-gray-200 border-[6px] border-gray-600 w-9 h-9 inline-block rounded-full drop-shadow-lg"></span>
                     </motion.span>
                     <motion.span animate={{
                         scale: [1, 0.9, 1, 1.2, 1],
                     }}
                                  transition={{ease: "linear", duration: 2, repeat: Infinity}}>
                         <span
-                            className="bg-gray-500 border-[6px] border-gray-200 w-9 h-9 inline-block rounded-full rounded-bl-none drop-shadow-lg"></span>
+                            className="bg-gray-500 border-[6px] border-gray-200 w-9 h-9 inline-block rounded-full drop-shadow-lg"></span>
                     </motion.span>
                     <motion.span animate={{
                         scale: [1, 0.9, 1, 1.2, 1],
                     }}
                                  transition={{ease: "linear", duration: 2, repeat: Infinity}}>
                         <span
-                            className="bg-gray-500 border-[6px] border-gray-200 w-9 h-9 inline-block rounded-full rounded-tr-none drop-shadow-lg"></span>
+                            className="bg-gray-500 border-[6px] border-gray-200 w-9 h-9 inline-block rounded-full drop-shadow-lg"></span>
                     </motion.span>
                     <motion.span animate={{
                         scale: [1, 1.2, 1, 0.9, 1],
                     }}
                                  transition={{ease: "linear", duration: 2, repeat: Infinity}}>
                         <span
-                            className="bg-gray-200 border-[6px] border-gray-600 w-9 h-9 inline-block rounded-full rounded-tl-none drop-shadow-lg"></span>
+                            className="bg-gray-200 border-[6px] border-gray-600 w-9 h-9 inline-block rounded-full drop-shadow-lg"></span>
                     </motion.span>
                 </div>
             </motion.div>
