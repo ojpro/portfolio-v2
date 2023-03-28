@@ -7,8 +7,6 @@ import {BsArrowRightShort} from "react-icons/bs";
 export default function About() {
     return (
         <>
-            {/* <> Navbar </> */}
-            <Navbar></Navbar>
             <a href="#" id="about"></a>
             <section className="min-h-screen relative">
                 <div className="m-20">
