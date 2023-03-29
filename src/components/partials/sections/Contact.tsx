@@ -46,9 +46,9 @@ export default function Contact() {
                     </div>
 
                     {/* <> Form </> */}
-                    <div className="relative">
+                    <div className="relative w-full max-w-lg p-4">
                         <form action=""
-                              className="flex flex-col flex-nowrap justify-start items-center gap-6 max-w-full min-w-[320px]">
+                              className="flex flex-col flex-nowrap justify-start items-center gap-6">
                             <label htmlFor="name" className="flex flex-col gap-2 w-full">
                                 <span>Name </span>
                                 <input type="text"
