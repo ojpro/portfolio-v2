@@ -13,20 +13,14 @@ export default function About() {
                     <div
                         className="mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center">
                         <div className="max-w-3xl flex flex-col justify-between gap-4">
-                            <div className="group">
+                            <div className="group flex flex-col flex-nowrap justify-between gap-5">
                                 <h3 className="text-2xl font-medium">Hey <span
                                     className="group-hover:animate-bounce inline-block">👋</span>,</h3>
                                 <h4 className="text-4xl font-bold">I make the website that will achieve your <span
-                                    className="relative inline-block before:block before:w-full before:h-2 before:bg-yellow-500 before:absolute before:-bottom-1 before:left-0 before:right-0 before:bg-opacity-90 before:-rotate-1 before:rounded-tr-md">business goal.</span>
+                                    className="relative inline-block after:absolute after:pointer-events-none after:w-full after:h-2 after:-bottom-1 after:left-0 after:bg-yellow-400  after:bg-opacity-90 after:-z-10 z-10 after:rounded-sm after:-rotate-1">business goal.</span>
                                 </h4>
                                 <p className="text-gray-200 text-lg">
-                                    I&apos;m Oussama, Full-Stack Developer. I work on building my clients&apos; ideas
-                                    as a
-                                    freelancer.
-                                    As a Developer, I am <span className="">very passionate</span> when it comes to
-                                    solving problems, Planning, and
-                                    designing ideas.
-                                    Besides my job, I play chess, draw things, and listen to Spotify.
+                                I&apos;m Oussama, a Full-Stack Developer. I work as a freelancer, using my skills to build my clients&apos; ideas. As a Developer, I am passionate about problem-solving, planning, and designing. In my spare time, I enjoy playing chess, drawing, and listening to Spotify.
                                 </p>
                             </div>
                             <div className="flex flex-row flex-nowrap gap-4 justify-start mt-4">
@@ -51,6 +45,10 @@ export default function About() {
                                 alt="My Picture" />
                         </div>
                     </div>
+                    <a href="#work"
+                        className="bg-gray-800 block w-fit mx-auto p-2 rounded-full shadow-2xl hover:bg-gray-800/50 hover:shadow-none hover:translate-y-0.5 hover:delay-200 hover:ease-linear animate-pulse hover:animate-none border-2 border-gray-700/40">
+                        <FiChevronDown className="w-8 h-8 text-gray-200"></FiChevronDown>
+                    </a>
                 </div>
             </section>
         </>
