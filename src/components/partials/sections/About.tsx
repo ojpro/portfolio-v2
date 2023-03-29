@@ -14,7 +14,7 @@ export default function About() {
                 <div className="absolute inset-0 m-auto p-20">
                     <h2 className="text-5xl font-bold text-center">Who Am I?</h2>
                     <div
-                        className="mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center">
+                        className="h-5/6 mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center">
                         <div className="max-w-3xl flex flex-col justify-between gap-4">
                             <div className="group flex flex-col flex-nowrap justify-between gap-5">
                                 <h3 className="text-2xl font-medium">Hey <span
