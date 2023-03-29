@@ -11,12 +11,12 @@ export default function Work() {
     return (
         <>
             <a href="#" id="work"></a>
-            <section className="container mx-auto px-8">
+            <section className="container mx-auto lg:px-8">
                 <h2 className="text-5xl font-bold text-center mb-20 mt-10">My Work</h2>
 
                 {/* <> Projects Card </> */}
                 <div className="w-11/12 mx-auto">
-                    <ul className="flex flex-col justify-between gap-24">
+                    <ul className="flex flex-col justify-between gap-16">
                         <ProjectCard title="SteakHouse" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aut cum earum et
                                     eum neque nulla quis saepe tempore." image={steakhouse} bgFrom="from-[#F3B194]"
                                      bgTo="to-[#F30103]"></ProjectCard>
