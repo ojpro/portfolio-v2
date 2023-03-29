@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <>
-      <nav className="flex flex-row justify-evenly items-center shadow backdrop-blur-lg dark:bg-opacity-50 leading-8 py-3 sticky top-0 left-0 right-0 dark:bg-black/40 z-50">
+      <nav className="flex flex-row justify-evenly items-center shadow-sm backdrop-blur-lg dark:bg-opacity-50 leading-8 py-3 sticky top-0 left-0 right-0 bg-black/30 z-50">
         <a href="#" className="text-lg font-bold">ojpro.</a>
         <ul className="flex flex-row justify-evenly gap-3 group">
           <li>
