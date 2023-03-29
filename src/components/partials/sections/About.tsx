@@ -1,7 +1,6 @@
-import Navbar from "@/components/partials/Navbar";
 import Image from "next/image";
 import MyPicture from "@/../public/images/my-picture.png";
-import { FiChevronDown, FiExternalLink } from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 import { BsArrowRightShort } from "react-icons/bs";
 
 export default function About() {
@@ -9,8 +8,8 @@ export default function About() {
         <>
             <a href="#" id="about"></a>
             <section className="min-h-screen relative">
-                <div className="absolute inset-0 m-auto p-20">
-                    <h2 className="text-5xl font-bold text-center">Who Am I?</h2>
+                <div className="m-20">
+                    <h2 className="text-5xl font-bold text-center mb-8 pt-16">Who Am I?</h2>
                     <div
                         className="mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center">
                         <div className="max-w-3xl flex flex-col justify-between gap-4">
