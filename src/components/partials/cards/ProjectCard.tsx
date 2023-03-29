@@ -26,6 +26,7 @@ export default function ProjectCard(props: { title: string, description: string,
                         </a>
                     </li>
                     <li className="bg-gradient-to-bl from-gray-600 to-gray-800/50 hover:to-gray-900 border border-transparent hover:border-gray-700 hover:delay-300 ease-linear rounded-full">
+
                         <a href="#"
                            className="flex flex-row justify-evenly items-center gap-2 px-3.5 py-2">
                             <span>Code</span>

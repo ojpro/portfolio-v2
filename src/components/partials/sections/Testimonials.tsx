@@ -1,72 +1,29 @@
+import TestimonialCard from "../cards/TestimonialCard";
+import AzaherPicture from "@/../public/images/clients/azaher.jpg";
+import NotFound from "@/../public/images/clients/404.jpg";
+
 export default function Testimonials() {
     return (
         <>
             <a href="#" id="testimonials"></a>
             <section className="py-28">
-                <h2 className="text-2xl text-center font-bold">What People Says?</h2>
+                <h2 className="text-5xl font-bold text-center my-16 max-h-fit">What People Says?</h2>
                 {/* <> Cards </> */}
                 <div>
-                    <ul className="flex flex-row flex-wrap justify-evenly items-center p-2">
-                        {/* <> Card </> */}
-                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
-                            <div>
-                                <span>&quot;</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div className="flex flex-row flex-nowrap justify-start items-center gap-2">
-                                <img src="https://source.unsplash.com/random/200x200/?person"
-                                     className="w-16 h-16 rounded-full" alt=""/>
-                                <div className="flex flex-col">
-                                    <h3>Client Name</h3>
-                                    <span className="text-xs text-gray-500">Company Name - CTO </span>
-                                </div>
-                            </div>
-                        </li>
-                        {/* <> Card </> */}
-                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
-                            <div>
-                                <span>&quot;</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div className="flex flex-row flex-nowrap justify-start items-center gap-2">
-                                <img src="https://source.unsplash.com/random/200x200/?person"
-                                     className="w-16 h-16 rounded-full" alt=""/>
-                                <div className="flex flex-col">
-                                    <h3>Client Name</h3>
-                                    <span className="text-xs text-gray-500">Company Name - CTO </span>
-                                </div>
-                            </div>
-                        </li>
-                        {/* <> Card </> */}
-                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
-                            <div>
-                                <span>&quot;</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div className="flex flex-row flex-nowrap justify-start items-center gap-2">
-                                <img src="https://source.unsplash.com/random/200x200/?person"
-                                     className="w-16 h-16 rounded-full" alt=""/>
-                                <div className="flex flex-col">
-                                    <h3>Client Name</h3>
-                                    <span className="text-xs text-gray-500">Company Name - CTO </span>
-                                </div>
-                            </div>
-                        </li>
-                        {/* <> Card </> */}
-                        <li className="bg-gray-50 dark:bg-gray-700 p-4 m-4 rounded w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 shadow">
-                            <div>
-                                <span>&quot;</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div className="flex flex-row flex-nowrap justify-start items-center gap-2">
-                                <img src="https://source.unsplash.com/random/200x200/?person"
-                                     className="w-16 h-16 rounded-full" alt=""/>
-                                <div className="flex flex-col">
-                                    <h3>Client Name</h3>
-                                    <span className="text-xs text-gray-500">Company Name - CTO </span>
-                                </div>
-                            </div>
-                        </li>
+                    <ul className="p-2 flex flex-row flex-wrap gap-24">
+                        
+                        <TestimonialCard
+                            feedback="Honestly, Oussama is a hardworking, creative, and patient individual. His service is excellent and I highly recommend working with him."
+                            name="Azaher" picture={AzaherPicture}></TestimonialCard>
+
+                        <TestimonialCard
+                            feedback="I have had the pleasure of working with Brother Oussama and have found him to be highly precise, quick, patient, and capable of meeting expectations. I look forward to continuing our professional relationship in the future."
+                            name="Ali Thamer" picture={NotFound}></TestimonialCard>
+
+                        <TestimonialCard
+                            feedback="With utmost respect, we feel immense pride in possessing an outstanding and distinguished hero, and all praise is due to Allah for His great success."
+                            name="Fahad Ghazi" picture={NotFound}></TestimonialCard>
+
                     </ul>
                 </div>
             </section>
