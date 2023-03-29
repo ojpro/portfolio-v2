@@ -11,8 +11,8 @@ export default function Work() {
     return (
         <>
             <a href="#" id="work"></a>
-            <section className="container mx-auto lg:px-8">
-                <h2 className="text-5xl font-bold text-center mb-20 mt-10">My Work</h2>
+            <section className="container mx-auto px-8">
+                <h2 className="text-5xl font-bold text-center mb-20 pt-20">My Work</h2>
 
                 {/* <> Projects Card </> */}
                 <div className="w-11/12 mx-auto">
