@@ -7,13 +7,13 @@ export default function About() {
     return (
         <>
             <a href="#" id="about"></a>
-            <section className="min-h-screen relative">
+            <section className="min-h-screen relative flex flex-col justify-evenly items-center">
                 <div className="m-4">
                     <h2 className="text-5xl font-bold text-center pt-20 mb-12 lg:mb-8">Who Am I?</h2>
                     <div
-                        className="h-5/6 mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center">
+                        className="mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center gap-8">
                         <div
-                            className="relative bg-gray-800 backdrop-blur-md dark:bg-opacity-80 hover:dark:bg-opacity-80 rounded-xl p-1 hover:rotate-2 shadow-2xl m-16 min-w-[300px] lg:order-2">
+                            className="relative bg-gray-800 backdrop-blur-md dark:bg-opacity-80 hover:dark:bg-opacity-80 rounded-xl p-1 hover:rotate-2 shadow-2xl m-16 min-w-[300px] xl:order-2">
                             <Image src={MyPicture}
                                    className="w-80 h-fit rounded-2xl rotate-3 hover:-rotate-6 shadow-2xl backdrop-blur-md md:opacity-80 hover:opacity-100 hover:scale-105 contrast-125"
                                    alt="My Picture" />
