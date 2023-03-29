@@ -17,6 +17,7 @@ export default function About() {
                             <Image src={MyPicture}
                                    className="w-80 h-fit rounded-2xl rotate-3 hover:-rotate-6 shadow-2xl backdrop-blur-md md:opacity-80 hover:opacity-100 hover:scale-105 contrast-125"
                                    alt="My Picture" />
+
                         </div>
                         <div className="max-w-3xl flex flex-col justify-between gap-4">
                             <div className="group flex flex-col flex-nowrap justify-between gap-5">
