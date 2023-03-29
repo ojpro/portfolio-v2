@@ -6,16 +6,17 @@ export default function Contact() {
         <>
             <a href="#" id="contact"></a>
             <section>
-                <div className="flex flex-row flex-wrap justify-evenly gap-8 p-4 container mx-auto my-36">
+                <div className="flex flex-row flex-wrap justify-evenly gap-8 p-4 container mx-auto lg:my-36 pt-8 lg:pt-0">
                     {/* <> Content </> */}
-                    <div className="max-w-xl flex flex-col justify-around gap-4 p-8 md:p-2 container">
+                    <div className="max-w-xl flex flex-col justify-around gap-4 p-4 md:p-2 container">
                         <div>
                             <h3 className="text-3xl font-bold my-4">Let&apos;s make something great from your
                                 ideas.</h3>
                             <p className="font-light text-gray-200">I&apos;m always open for any kind of help that i can
                                 possibly provide to anyone who need it.</p>
                         </div>
-                        <ul className="flex flex-row flex-nowrap justify-evenly gap-6 w-1/2">
+                        {/* Social Media Links */}
+                        <ul className="flex flex-row flex-nowrap justify-evenly gap-6 my-4">
                             <li>
                                 <a href="https://twitter.com/heyojpro">
                                     <FiTwitter className="w-6 h-6 hover:fill-white hover:text-black"></FiTwitter>
@@ -45,9 +46,9 @@ export default function Contact() {
                     </div>
 
                     {/* <> Form </> */}
-                    <div>
+                    <div className="relative">
                         <form action=""
-                              className="flex flex-col flex-nowrap justify-start items-center gap-6 w-96">
+                              className="flex flex-col flex-nowrap justify-start items-center gap-6 max-w-full min-w-[320px]">
                             <label htmlFor="name" className="flex flex-col gap-2 w-full">
                                 <span>Name </span>
                                 <input type="text"
