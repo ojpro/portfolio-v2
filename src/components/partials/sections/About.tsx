@@ -1,6 +1,6 @@
 import Image from "next/image";
 import MyPicture from "@/../public/images/my-picture.png";
-import { FiExternalLink } from "react-icons/fi";
+import {FiChevronDown, FiExternalLink } from "react-icons/fi";
 import { BsArrowRightShort } from "react-icons/bs";
 
 export default function About() {
