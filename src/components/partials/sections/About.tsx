@@ -1,14 +1,11 @@
-import Navbar from "@/components/partials/Navbar";
 import Image from "next/image";
 import MyPicture from "@/../public/images/my-picture.png";
-import { FiChevronDown, FiExternalLink } from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 import { BsArrowRightShort } from "react-icons/bs";
 
 export default function About() {
     return (
         <>
-            {/* <> Navbar </> */}
-            <Navbar></Navbar>
             <a href="#" id="about"></a>
             <section className="min-h-screen relative">
                 <div className="m-4">
