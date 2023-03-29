@@ -17,15 +17,16 @@ export default function ProjectCard(props: { title: string, description: string,
             </div>
             <div className="relative group">
                 <Image src={props.image} alt="" className=""/>
-                <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-16 rounded min-w-max invisible group-hover:visible delay-300 ease-in-out">
-                    <li className="inline-block bg-gradient-to-bl from-gray-600/50 to-gray-700/50 hover:from-gray-600/90 hover:to-gray-900/80 hover:delay-300 ease-linear rounded-full mr-4">
+                <ul className="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 lg:invisible lg:p-16 p-8 rounded min-w-max group-hover:visible delay-300 ease-in-out flex md:flex-row flex-wrap gap-4 justify-between items-start">
+                    <li className="bg-gradient-to-bl from-gray-600 to-gray-800/50 hover:to-gray-900 border border-transparent hover:border-gray-700 hover:delay-300 ease-linear rounded-full mr-4">
                         <a href="#"
                            className="flex flex-row justify-evenly items-center gap-2 px-3.5 py-2">
                             <span>Preview</span>
                             <RxExternalLink className="text-2xl font-bold"></RxExternalLink>
                         </a>
                     </li>
-                    <li className="inline-block bg-gradient-to-bl from-gray-600/50 to-gray-700/50 hover:from-gray-600/90 hover:to-gray-900/80 hover:delay-300 ease-linear rounded-full mr-4">
+                    <li className="bg-gradient-to-bl from-gray-600 to-gray-800/50 hover:to-gray-900 border border-transparent hover:border-gray-700 hover:delay-300 ease-linear rounded-full">
+
                         <a href="#"
                            className="flex flex-row justify-evenly items-center gap-2 px-3.5 py-2">
                             <span>Code</span>

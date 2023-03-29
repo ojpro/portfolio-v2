@@ -1,62 +1,73 @@
-import {BsInstagram,BsTwitter,BsLinkedin, BsGithub} from "react-icons/bs"
+import {FiInstagram, FiTwitter, FiLinkedin, FiGithub,FiSend} from "react-icons/fi";
+import {HiOutlineMail} from "react-icons/hi";
 
 export default function Contact() {
     return (
         <>
             <a href="#" id="contact"></a>
-            <section className="mt-12">
-                <div className="flex flex-row flex-wrap justify-evenly items-center gap-4 w-9/12 mx-auto">
+            <section>
+                <div className="flex flex-row flex-wrap justify-evenly gap-8 p-4 container mx-auto lg:my-36 pt-8 lg:pt-0">
                     {/* <> Content </> */}
-                    <div className="w-[500px] p-3 h-fit">
-                        <h2 className="text-2xl font-bold">Want to work together?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dignissimos odit nesciunt
-                            laudantium
-                            nihil, vero ex temporibus amet veritatis possimus.</p>
-                        <br/>
-                        <ul className="flex flex-row flex-nowrap gap-2">
+                    <div className="max-w-xl flex flex-col justify-around gap-4 p-4 md:p-2 container">
+                        <div>
+                            <h3 className="text-3xl font-bold my-4">Let&apos;s make something great from your
+                                ideas.</h3>
+                            <p className="font-light text-gray-200">I&apos;m always open for any kind of help that i can
+                                possibly provide to anyone who need it.</p>
+                        </div>
+                        {/* Social Media Links */}
+                        <ul className="flex flex-row flex-nowrap justify-evenly gap-6 my-4">
                             <li>
-                                <a href="#">
-                                    <BsInstagram className="w-6 h-6"></BsInstagram>
+                                <a href="https://twitter.com/heyojpro">
+                                    <FiTwitter className="w-6 h-6 hover:fill-white hover:text-black"></FiTwitter>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <BsTwitter className="w-6 h-6"></BsTwitter>
+                                <a href="https://linkedin.com/in/ojpro">
+                                    <FiLinkedin className="w-6 h-6 hover:fill-white hover:text-black"></FiLinkedin>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <BsLinkedin className="w-6 h-6"></BsLinkedin>
+                                <a href="https://www.instagram.com/heyojpro">
+                                    <FiInstagram className="w-6 h-6 hover:fill-white hover:text-black"></FiInstagram>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <BsGithub className="w-6 h-6"></BsGithub>
+                                <a href="https://github.com/ojpro">
+                                    <FiGithub className="w-6 h-6 hover:fill-white hover:text-black"></FiGithub>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:work@ojpro.me">
+                                    <HiOutlineMail className="w-7 h-7 hover:fill-white hover:text-black"></HiOutlineMail>
                                 </a>
                             </li>
                         </ul>
                     </div>
 
                     {/* <> Form </> */}
-                    <div className="w-full md:w-8/12 lg:w-5/12 xl:w-1/3">
+                    <div className="relative">
                         <form action=""
-                              className="flex flex-col justify-items-stretch gap-4 bg-blue-100 dark:bg-gray-800 p-6 rounded-md w-full">
-                            <label htmlFor="">
-                                <span className="block">Name : </span>
+                              className="flex flex-col flex-nowrap justify-start items-center gap-6 max-w-full min-w-[320px]">
+                            <label htmlFor="name" className="flex flex-col gap-2 w-full">
+                                <span>Name </span>
                                 <input type="text"
-                                       className="py-2 px-2.5 rounded w-full shadow outline-2 outline-blue-500"/>
+                                       className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
+                                       id="name" required/>
                             </label>
-                            <label htmlFor="">
-                                <span className="block">Email : </span>
-                                <input type="email" className="py-2 px-2.5 rounded w-full shadow outline-blue-500"/>
+                            <label htmlFor="email" className="flex flex-col gap-2 w-full">
+                                <span>Email </span>
+                                <input type="email"
+                                       className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
+                                       id="email" required/>
                             </label>
-                            <label htmlFor="">
-                                <span className="block">Message : </span>
-                                <textarea name="" id=""
-                                          className="py-2 px-2.5 rounded w-full shadow outline-blue-500"></textarea>
+                            <label htmlFor="message" className="flex flex-col gap-2 w-full">
+                                <span>Message </span>
+                                <textarea name="" id="message"
+                                          className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600" required></textarea>
                             </label>
 
-                            <button className="bg-blue-500 px-2.5 py-3 rounded text-white shadow">Send</button>
+                            <button className="bg-blue-600 px-7 py-2 rounded self-start group hover:shadow hover:shadow-blue-600">Send <FiSend className="inline-block ml-2 group-hover:fill-white"></FiSend></button>
                         </form>
                     </div>
                 </div>
