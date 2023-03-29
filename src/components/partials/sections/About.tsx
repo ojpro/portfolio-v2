@@ -8,10 +8,10 @@ export default function About() {
         <>
             <a href="#" id="about"></a>
             <section className="min-h-screen relative">
-                <div className="m-20">
-                    <h2 className="text-5xl font-bold text-center mb-8 pt-16">Who Am I?</h2>
+                <div className="m-4">
+                    <h2 className="text-5xl font-bold text-center pt-20 mb-12 lg:mb-8">Who Am I?</h2>
                     <div
-                        className="mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center">
+                        className="h-5/6 mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center">
                         <div className="max-w-3xl flex flex-col justify-between gap-4">
                             <div className="group flex flex-col flex-nowrap justify-between gap-5">
                                 <h3 className="text-2xl font-medium">Hey <span
@@ -23,7 +23,7 @@ export default function About() {
                                 I&apos;m Oussama, a Full-Stack Developer. I work as a freelancer, using my skills to build my clients&apos; ideas. As a Developer, I am passionate about problem-solving, planning, and designing. In my spare time, I enjoy playing chess, drawing, and listening to Spotify.
                                 </p>
                             </div>
-                            <div className="flex flex-row flex-nowrap gap-4 justify-start mt-4">
+                            <div className="flex flex-row flex-wrap gap-4 justify-start mt-4">
                                 <a href="#contact"
                                     className="py-2.5 px-4 bg-[#4462f5] text-white rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 hover:py-3 hover:px-5 group">
                                     Let&apos;s work
@@ -31,15 +31,15 @@ export default function About() {
                                         className="w-6 h-auto group-hover:animate-ping"></BsArrowRightShort>
                                 </a>
                                 <a href="#"
-                                    className="py-2.5 px-4 bg-gray-800 text-gray-300 rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 border-2 border-transparent hover:border-2 hover:border-blue-600 hover:translate-x-0.5 group">
+                                    className="py-2.5 px-4 bg-gray-800 text-gray-300 rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 border-2 border-transparent hover:border-blue-600 hover:translate-x-0.5 group">
                                     Want My Resume ?
                                     <FiExternalLink
-                                        className="group-hover:text-blue-400 hidden group-hover:inline-block"></FiExternalLink>
+                                        className="group-hover:text-blue-400 invisible group-hover:visible"></FiExternalLink>
                                 </a>
                             </div>
                         </div>
                         <div
-                            className="relative bg-gray-800 backdrop-blur-md dark:bg-opacity-80 hover:dark:bg-opacity-80 rounded-xl p-1 hover:rotate-2 shadow-2xl m-16">
+                            className="relative bg-gray-800 backdrop-blur-md dark:bg-opacity-80 hover:dark:bg-opacity-80 rounded-xl p-1 hover:rotate-2 shadow-2xl m-16 min-w-[300px]">
                             <Image src={MyPicture}
                                 className="w-80 h-fit rounded-2xl rotate-3 hover:-rotate-6 shadow-2xl backdrop-blur-md md:opacity-80 hover:opacity-100 hover:scale-105 contrast-125"
                                 alt="My Picture" />
