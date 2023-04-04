@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Disclosure } from '@headlessui/react'
-import {HiBars3BottomRight,HiOutlineXMark} from "react-icons/hi2"
+import { HiBars3BottomRight, HiOutlineXMark } from "react-icons/hi2"
 
+// navigation's interface
 interface Navigation {
   name: string,
   href: string,
@@ -10,12 +11,29 @@ interface Navigation {
 
 export default function Example() {
 
+  // navigation object's to store nav links
   const [navigation, setNavigation] = useState<Navigation[]>([
     { name: 'About', href: '#about', current: true },
     { name: 'Work', href: '#work', current: false },
     { name: 'Testimonials', href: '#testimonials', current: false },
     { name: 'Contact', href: '#contact', current: false },
   ]);
+
+  // update nav to the current section
+  function updateNavigation(item: { name: string, href: string, current: boolean }) {
+    // loop through the navigation items 
+    const newNavigation = navigation.map(navItem => {
+      // looking for the current item and make it active
+      return {
+        ...navItem,
+        current: navItem.name === item.name
+      };
+    });
+
+    // then apply the update
+    setNavigation(newNavigation);
+  }
+
 
   return (
     <Disclosure as="nav" className="backdrop-blur-sm sticky top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20">
@@ -33,9 +51,10 @@ export default function Example() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
+                        onClick={() => updateNavigation(item)}
                         key={item.name}
                         href={item.href}
-                        className="text-gray-300 hover:bg-slate-800 hover:text-white rounded px-3 py-2 text-sm font-medium"
+                        className={`text-gray-300 ${item.current ? 'bg-gray-800 rotate-2' : ''} hover:bg-slate-800 hover:text-white rounded px-3 py-2 text-sm font-medium`}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
@@ -62,10 +81,11 @@ export default function Example() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
+                  onClick={() => updateNavigation(item)}
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                  className={`text-gray-300 ${item.current ? 'bg-red-400' : ''} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
