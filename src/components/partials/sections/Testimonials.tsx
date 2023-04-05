@@ -6,7 +6,7 @@ export default function Testimonials() {
     return (
         <>
             <a href="#" id="testimonials"></a>
-            <section className="py-28">
+            <section>
                 <h2 className="text-5xl font-bold text-center my-10 max-h-fit">What People Says?</h2>
                 {/* <> Cards </> */}
                 <div>
