@@ -6,8 +6,8 @@ export default function Testimonials() {
     return (
         <>
             <a href="#" id="testimonials"></a>
-            <section>
-                <h2 className="text-5xl font-bold text-center my-10 max-h-fit">What People Says?</h2>
+            <section className="py-28">
+                <h2 className="h2">What People Says?</h2>
                 {/* <> Cards </> */}
                 <div>
                     <ul className="p-2 flex flex-row flex-wrap gap-24">
