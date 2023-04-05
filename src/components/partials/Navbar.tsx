@@ -13,7 +13,7 @@ export default function Example() {
 
   // navigation object's to store nav links
   const [navigation, setNavigation] = useState<Navigation[]>([
-    { name: 'About', href: '#about', current: true },
+    { name: 'About', href: '#about', current: false },
     { name: 'Work', href: '#work', current: false },
     { name: 'Testimonials', href: '#testimonials', current: false },
     { name: 'Contact', href: '#contact', current: false },
@@ -85,7 +85,7 @@ export default function Example() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className={`text-gray-300 ${item.current ? 'bg-red-400' : ''} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+                  className={`text-gray-300 ${item.current ? 'bg-gray-800' : ''} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
