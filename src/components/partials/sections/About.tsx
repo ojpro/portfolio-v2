@@ -9,7 +9,7 @@ export default function About() {
             <a href="#" id="about"></a>
             <section className="min-h-screen relative flex flex-col justify-evenly items-center">
                 <div className="m-4">
-                    <h2 className="text-5xl font-bold text-center pt-20 mb-12 lg:mb-8">Who Am I?</h2>
+                    <h2 className="h2">Who Am I?</h2>
                     <div
                         className="mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center gap-8">
                         <div
