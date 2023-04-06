@@ -17,7 +17,7 @@ export default function HeroSection() {
                             website.</h3>
                     </div>
                     <Image src={IllustrationImage} alt="Website Development Services"
-                        className="w-full md:w-1/3 h-auto" />
+                        className="w-full md:w-1/3 h-auto" loading="eager" />
                 </div>
                 <svg preserveAspectRatio="none" width="1440" height="74" viewBox="0 0 1440 74"
                     className="absolute -bottom-[74px] left-0 right-0 rotate-180 w-full fill-black/40">
