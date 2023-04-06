@@ -54,6 +54,7 @@ export default function Example() {
                         onClick={() => updateNavigation(item)}
                         key={item.name}
                         href={item.href}
+                        aria-label={item.name}
                         className={`text-gray-300 ${item.current ? 'bg-gray-800 rotate-2' : ''} hover:bg-slate-800 hover:text-white rounded px-3 py-2 text-sm font-medium`}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -85,6 +86,7 @@ export default function Example() {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  aria-label={item.name}
                   className={`text-gray-300 ${item.current ? 'bg-gray-800' : ''} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
                   aria-current={item.current ? 'page' : undefined}
                 >
