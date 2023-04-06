@@ -37,13 +37,13 @@ export default function About() {
                                 </p>
                             </div>
                             <div className="flex flex-row flex-wrap gap-4 justify-start mt-4">
-                                <Link href="#contact"
+                                <Link href="#contact" title="Contact Section"
                                    className="py-2.5 px-4 bg-[#4462f5] text-white rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 hover:py-3 hover:px-5 group">
                                     Let&apos;s work
                                     <BsArrowRightShort
                                         className="w-6 h-auto group-hover:animate-ping"></BsArrowRightShort>
                                 </Link>
-                                <Link href="/documents/cv.pdf" target="_blank"
+                                <Link href="/documents/cv.pdf" target="_blank" title="My Resume"
                                       className="py-2.5 px-4 bg-gray-800 text-gray-300 rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 border-2 border-transparent hover:border-blue-600 hover:translate-x-0.5 group">
                                     Want My Resume ?
                                     <FiExternalLink

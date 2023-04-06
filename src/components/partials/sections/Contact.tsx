@@ -1,6 +1,7 @@
 import {FiGithub, FiInstagram, FiLinkedin, FiSend, FiTwitter} from "react-icons/fi";
 import {HiOutlineMail} from "react-icons/hi";
 import {useState} from "react";
+import Link from "next/link";
 
 export default function Contact() {
     // initialize form field
@@ -56,30 +57,30 @@ export default function Contact() {
                     {/* Social Media Links */}
                     <ul className="flex flex-row flex-nowrap justify-evenly gap-6 my-4">
                         <li>
-                            <a href="https://twitter.com/heyojpro">
+                            <Link href="https://twitter.com/heyojpro" title="Follow my Twitter Account">
                                 <FiTwitter className="w-6 h-6 hover:fill-white hover:text-black"></FiTwitter>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/ojpro">
+                            <Link href="https://linkedin.com/in/ojpro" title="My Account on Linkedin">
                                 <FiLinkedin className="w-6 h-6 hover:fill-white hover:text-black"></FiLinkedin>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/heyojpro">
+                            <Link href="https://www.instagram.com/heyojpro" title="My Instagram Account">
                                 <FiInstagram className="w-6 h-6 hover:fill-white hover:text-black"></FiInstagram>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="https://github.com/ojpro">
+                            <Link href="https://github.com/ojpro" title="Visit My Github Profile">
                                 <FiGithub className="w-6 h-6 hover:fill-white hover:text-black"></FiGithub>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="mailto:work@ojpro.me">
+                            <Link href="mailto:work@ojpro.me" title="Send Me an Email">
                                 <HiOutlineMail
                                     className="w-7 h-7 hover:fill-white hover:text-black"></HiOutlineMail>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
