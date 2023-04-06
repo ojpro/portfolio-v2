@@ -29,8 +29,6 @@ export default function Document() {
 
                 {/* TODO: favicons */}
 
-                <title>My Portfolio 💻 - ojpro </title>
-
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link

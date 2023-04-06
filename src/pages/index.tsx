@@ -7,9 +7,15 @@ import Contact from "@/components/partials/sections/Contact";
 import HeroSection from "@/components/partials/sections/Hero";
 import Navbar from "@/components/partials/Navbar";
 
+import Head from "next/head";
+
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>My Portfolio 💻 - ojpro </title>
+            </Head>
+
             <BlankLayout>
                 {/* <> Navbar </> */}
                 <Navbar></Navbar>
