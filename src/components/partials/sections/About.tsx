@@ -4,7 +4,7 @@ import Link from "next/link";
 import {FiExternalLink} from "react-icons/fi";
 import {BsArrowRightShort} from "react-icons/bs";
 // import resources
-import MyPicture from "@/../public/images/my-picture.png";
+import MyPicture from "@/../public/images/my-picture.jpeg";
 
 export default function About() {
     return (
