@@ -40,3 +40,6 @@ next-env.d.ts
 
 # PhpStorm
 .idea/
+
+# env
+.env
