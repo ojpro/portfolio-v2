@@ -35,7 +35,6 @@ export default function Example() {
         setNavigation(newNavigation);
     }
 
-
     return (
         <Disclosure as="nav" className="backdrop-blur-sm sticky top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20">
             {({open}) => (
@@ -57,6 +56,7 @@ export default function Example() {
                                                 key={item.name}
                                                 href={item.href}
                                                 title={item.name}
+                                                aria-label={item.name}
                                                 className={`text-gray-300 ${item.current ? 'bg-gray-800 rotate-2' : ''} hover:bg-slate-800 hover:text-white rounded px-3 py-2 text-sm font-medium`}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
@@ -89,6 +89,7 @@ export default function Example() {
                                     key={item.name}
                                     as="a"
                                     href={item.href}
+                                    aria-label={item.name}
                                     title={item.name}
                                     className={`text-gray-300 ${item.current ? 'bg-gray-800' : ''} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
                                     aria-current={item.current ? 'page' : undefined}
