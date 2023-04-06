@@ -103,7 +103,7 @@ export default function Contact() {
                         <label htmlFor="message" className="flex flex-col gap-2 w-full">
                             <span>Message </span>
                             <textarea name="" id="message" value={message} onChange={(e) => setMessage(e.target.value)}
-                                      className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
+                                      className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600 h-24"
                                       required></textarea>
                         </label>
 
