@@ -34,27 +34,32 @@ export default function Contact() {
                 "Content-Type": "application/json",
             },
             method: "POST",
-        });
+        }).then(() => {
+            // show a success modal
+            Swal.fire(
+                'Email sent to me',
+                'I will get in touch with you as soon as possible.',
+                'success'
+            )
 
-        // catch errors
-        const { error } = await res.json();
-        
-        // handle errors if exists
-        if (error) {
-            // TODO:  #52 issues
-            console.log(error);
-            return;
-        }
+            // after the modal dimiss return the button to it state
+            setIsSendingEmail(false);
+            
+            // clear all the inputs
+            setName('');
+            setEmail('');
+            setMessage('');
 
-        // show a success modal
-        Swal.fire(
-            'Email sent to me',
-            'I will get in touch with you as soon as possible.',
-            'success'
-        )
+        }).catch(error => {
 
-        // after the modal dimiss return the button to it state
-        setIsSendingEmail(false);
+            // handle errors if exists
+            if (error) {
+                // TODO:  #52 issues
+                console.log(error);
+                return;
+            }
+        })
+
     };
 
     return (<>
