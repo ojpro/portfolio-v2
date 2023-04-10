@@ -1,6 +1,6 @@
-import {FiGithub, FiInstagram, FiLinkedin, FiSend, FiTwitter} from "react-icons/fi";
-import {HiOutlineMail} from "react-icons/hi";
-import {useState} from "react";
+import { FiGithub, FiInstagram, FiLinkedin, FiSend, FiTwitter } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
+import { useState } from "react";
 import Link from "next/link";
 
 // Import SweetAlert
@@ -11,10 +11,15 @@ export default function Contact() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [isSendingEmail, setIsSendingEmail] = useState(false);
 
     // form submitting function
     const handleSubmit = async (e: any) => {
+        // prevent submitting action
         e.preventDefault();
+
+        // disable submit button with a little effects
+        setIsSendingEmail(true);
 
         // TODO: validate the form
 
@@ -32,7 +37,8 @@ export default function Contact() {
         });
 
         // catch errors
-        const {error} = await res.json();
+        const { error } = await res.json();
+        
         // handle errors if exists
         if (error) {
             // TODO:  #52 issues
@@ -45,7 +51,10 @@ export default function Contact() {
             'Email sent to me',
             'I will get in touch with you as soon as possible.',
             'success'
-          )
+        )
+
+        // after the modal dimiss return the button to it state
+        setIsSendingEmail(false);
     };
 
     return (<>
@@ -95,30 +104,30 @@ export default function Contact() {
                 {/* <> Form </> */}
                 <div className="relative w-full max-w-lg p-4">
                     <form action="" onSubmit={handleSubmit}
-                          className="flex flex-col flex-nowrap justify-start items-center gap-6">
+                        className="flex flex-col flex-nowrap justify-start items-center gap-6">
                         <label htmlFor="name" className="flex flex-col gap-2 w-full">
                             <span>Full Name </span>
                             <input type="text" value={name} onChange={(e) => setName(e.target.value)}
-                                   className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
-                                   id="name" required/>
+                                className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
+                                id="name" required />
                         </label>
                         <label htmlFor="email" className="flex flex-col gap-2 w-full">
                             <span>Email </span>
                             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}
-                                   className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
-                                   id="email" required/>
+                                className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600"
+                                id="email" required />
                         </label>
                         <label htmlFor="message" className="flex flex-col gap-2 w-full">
                             <span>Message </span>
                             <textarea name="" id="message" value={message} onChange={(e) => setMessage(e.target.value)}
-                                      className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600 h-24"
-                                      required></textarea>
+                                className="px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 border-gray-700 focus:border-blue-600 h-24"
+                                required></textarea>
                         </label>
 
                         <button
-                            className="bg-blue-600 px-7 py-2 rounded self-start group hover:shadow hover:shadow-blue-600">
+                            className={`px-7 py-2 rounded self-start group hover:shadow hover:shadow-blue-600 ${isSendingEmail ? 'bg-blue-400 cursor-not-allowed' : 'bg-blue-600'}`}>
                             Send
-                            <FiSend className="inline-block ml-2 group-hover:fill-white"></FiSend></button>
+                            <FiSend className={`inline-block ml-2 group-hover:fill-white ${isSendingEmail ? 'animate-pulse' : ''}`}></FiSend></button>
                     </form>
                 </div>
             </div>
