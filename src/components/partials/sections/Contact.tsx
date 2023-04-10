@@ -3,6 +3,9 @@ import {HiOutlineMail} from "react-icons/hi";
 import {useState} from "react";
 import Link from "next/link";
 
+// Import SweetAlert
+import Swal from 'sweetalert2'
+
 export default function Contact() {
     // initialize form field
     const [name, setName] = useState("");
@@ -37,8 +40,12 @@ export default function Contact() {
             return;
         }
 
-        // TODO: show a success modal
-        alert("Email Sent Successfully")
+        // show a success modal
+        Swal.fire(
+            'Email sent to me',
+            'I will get in touch with you as soon as possible.',
+            'success'
+          )
     };
 
     return (<>
