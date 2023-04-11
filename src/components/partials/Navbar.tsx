@@ -57,7 +57,7 @@ export default function Example() {
                                                 href={item.href}
                                                 title={item.name}
                                                 aria-label={item.name}
-                                                className={`text-gray-300 ${item.current ? 'bg-gray-800 rotate-2' : ''} hover:bg-slate-800 hover:text-white rounded px-3 py-2 text-sm font-medium`}
+                                                className={`text-gray-300 ${item.current ? 'bg-gray-800 rotate-2' : ''} hover:bg-slate-800 hover:text-white rounded px-3 py-2 text-sm font-normal`}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
