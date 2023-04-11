@@ -45,7 +45,7 @@ export default function Contact() {
         else {
             // otherwise back to default
             setValidName(true);
-            
+
             // enable form
             setCanSubmit(true);
         }
@@ -108,46 +108,64 @@ export default function Contact() {
         // prevent submitting action
         e.preventDefault();
 
-        // disable submit button with a little effects
-        setCanSubmit(false);
+        // easy-selector
+        let $ = (el: any) => document.querySelector(el);
 
-        // send email
-        const res = await fetch("/api/sendgrid", {
-            body: JSON.stringify({
-                email: email,
-                name: name,
-                message: message,
-            }),
-            headers: {
-                "Content-Type": "application/json",
-            },
-            method: "POST",
-        }).then(() => {
-            // show a success modal
-            Swal.fire(
-                'Email sent to me',
-                'I will get in touch with you as soon as possible.',
-                'success'
-            )
+        // check if the fields are empty
+        if (name == '') {
+            $('#name').focus()
+            return
+        }
+        if (email == '') {
+            $('#email').focus()
+            return
+        }
+        if (message == '') {
+            $('#message').focus()
+            return
+        }
 
-            // after the modal dimiss return the button to it state
-            setCanSubmit(true);
+        // dont prcess until all the fields are valid
+        if (validName && validEmail && validMessage) {
+            // disable submit button with a little effects
+            setCanSubmit(false);
 
-            // clear all the inputs
-            setName('');
-            setEmail('');
-            setMessage('');
+            // send email
+            await fetch("/api/sendgrid", {
+                body: JSON.stringify({
+                    email: email,
+                    name: name,
+                    message: message,
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
+            }).then(() => {
+                // show a success modal
+                Swal.fire(
+                    'Email sent to me',
+                    'I will get in touch with you as soon as possible.',
+                    'success'
+                )
 
-        }).catch(error => {
+                // after the modal dimiss return the button to it state
+                setCanSubmit(true);
 
-            // handle errors if exists
-            if (error) {
-                // TODO:  #52 issues
-                console.log(error);
-                return;
-            }
-        })
+                // clear all the inputs
+                setName('');
+                setEmail('');
+                setMessage('');
 
+            }).catch(error => {
+                // handle errors if exists
+                if (error) {
+                    // TODO:  look for a way to handle this
+                    console.log(error);
+                    return;
+                }
+            })
+        }
     };
 
     return (<>
@@ -200,23 +218,23 @@ export default function Contact() {
                         className="flex flex-col flex-nowrap justify-start items-center gap-6">
                         <label htmlFor="name" className="flex flex-col gap-2 w-full">
                             <span>Full Name </span>
-                            <input type="text" value={name} onChange={validateName}
+                            <input type="text" value={name} id="name" onChange={validateName}
                                 className={`px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 focus:border-blue-600  ${validName == true ? 'border-gray-700' : 'border-red-400'}`}
-                                id="name" required />
+                               required />
                             <span className="text-sm text-red-400 font-medium">{validName}</span>
                         </label>
                         <label htmlFor="email" className="flex flex-col gap-2 w-full">
                             <span>Email </span>
-                            <input type="email" value={email} onChange={validateEmail}
+                            <input type="email" value={email} id="email" onChange={validateEmail}
                                 className={`px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 focus:border-blue-600  ${validEmail == true ? 'border-gray-700' : 'border-red-400'}`}
-                                id="email" required />
+                                required/>
                             <span className="text-sm text-red-400 font-medium">{validEmail}</span>
                         </label>
                         <label htmlFor="message" className="flex flex-col gap-2 w-full">
                             <span>Message </span>
                             <textarea name="" id="message" value={message} onChange={validateMessage}
                                 className={`px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 ${validMessage == true ? 'border-gray-700' : 'border-red-400'} focus:border-blue-600 h-24`}
-                                required></textarea>
+                               required ></textarea>
                             <span className="text-sm text-red-400 font-medium">{validMessage}</span>
                         </label>
 
