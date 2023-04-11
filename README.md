@@ -3,6 +3,9 @@
 
 A simple and modern portfolio, easy to use and performance focused.
 
+![321shots_so](https://user-images.githubusercontent.com/108437129/231165823-cf430046-982f-467f-82b8-60d932ab7b6c.png)
+
+
 ## Features
 
 ⚡ Dark mode\
