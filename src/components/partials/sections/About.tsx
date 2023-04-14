@@ -38,7 +38,7 @@ export default function About() {
                                 </p>
                             </div>
                             <div className="flex flex-row flex-wrap gap-4 justify-start mt-4">
-                                <Link href="#contact" title="Contact Section"
+                                <Link href="#contact" title="Let's make business!"
                                    className="py-2.5 px-4 bg-[#4462f5] text-white rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 hover:py-3 hover:px-5 group">
                                     Let&apos;s work
                                     <BsArrowRightShort
