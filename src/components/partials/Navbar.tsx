@@ -36,7 +36,7 @@ export default function Example() {
     }
 
     return (
-        <Disclosure as="nav" className="backdrop-blur-sm sticky top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20">
+        <Disclosure as="nav" className="backdrop-blur-sm fixed top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20">
             {({open}) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@ export default function Example() {
                                                 href={item.href}
                                                 title={item.name}
                                                 aria-label={item.name}
-                                                className={`text-gray-300 ${item.current ? 'bg-gray-800 rotate-2' : ''} hover:bg-slate-800 hover:text-white rounded px-3 py-2 text-sm font-normal`}
+                                                className={`text-gray-300 ${item.current ? 'bg-gray-800 rotate-2' : ''} hover:bg-slate-800/40 hover:text-white rounded px-3 py-2 text-sm font-normal`}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
@@ -82,7 +82,7 @@ export default function Example() {
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 px-2 pb-3 pt-2">
+                        <div className="space-y-4 px-2 pb-3 pt-2 min-h-screen text-center">
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     onClick={() => updateNavigation(item)}
@@ -91,7 +91,7 @@ export default function Example() {
                                     href={item.href}
                                     aria-label={item.name}
                                     title={item.name}
-                                    className={`text-gray-300 ${item.current ? 'bg-gray-800' : ''} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-md xl:text-sm font-medium`}
+                                    className={`text-gray-300 ${item.current ? 'bg-gray-800' : ''} hover:bg-gray-700/40 hover:text-white block rounded-md px-3 py-3 text-md xl:text-sm font-medium`}
                                     aria-current={item.current ? 'page' : undefined}
                                 >
                                     {item.name}
