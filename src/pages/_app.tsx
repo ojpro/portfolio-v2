@@ -6,9 +6,9 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
 
-            <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+            <Script id='google-analytics-import-script' strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
 
-            <Script strategy="lazyOnload">
+            <Script id='google-analytics-script-execution' strategy="lazyOnload">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
