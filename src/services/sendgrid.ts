@@ -17,7 +17,7 @@ export default async function sendEmail(to: any, from: any, subject: string, nam
     };
     try {
         await sendgrid.send(message);
-        console.log(`Email sent to ${to}`);
+        console.log(`Email sent`);
     } catch (error) {
         console.error(error);
     }
