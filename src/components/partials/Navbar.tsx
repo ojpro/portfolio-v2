@@ -44,7 +44,7 @@ export default function Example() {
                             <div
                                 className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between p-4">
                                 <div className="flex flex-shrink-0 items-start">
-                                    <a href="#" className='text-lg font-bold' role='menuitem'>
+                                    <a href="#" className='text-lg font-bold' role='link'>
                                         ojpro<span className="text-blue-300">.</span>me
                                     </a>
                                 </div>
@@ -53,7 +53,7 @@ export default function Example() {
                                         {navigation.map((item) => (
                                             <Link
                                                 onClick={() => updateNavigation(item)}
-                                                role="menuitem"
+                                                role="link"
                                                 key={item.name}
                                                 href={item.href}
                                                 title={item.name}
@@ -68,7 +68,7 @@ export default function Example() {
                                 </div>
                                 <div className="flex items-end sm:hidden">
                                     {/* Mobile menu button*/}
-                                    <Disclosure.Button role='button'
+                                    <Disclosure.Button role='button' type='button'
                                         className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
                                         <span className="sr-only">Open main menu</span>
                                         {open ? (
@@ -88,7 +88,7 @@ export default function Example() {
                                 <Disclosure.Button
                                     onClick={() => updateNavigation(item)}
                                     key={item.name}
-                                    role="menuitem"
+                                    role="link"
                                     as="a"
                                     href={item.href}
                                     aria-label={item.name}
