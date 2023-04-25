@@ -169,7 +169,7 @@ export default function Contact() {
     };
 
     return (<>
-        <a href="#" id="contact"></a>
+        <a href="#" id="contact" aria-label="Contact Section"></a>
         <section>
             <div
                 className="flex flex-row flex-wrap justify-evenly gap-8 p-4 container mx-auto lg:my-36 pt-8 lg:pt-0">
@@ -184,27 +184,27 @@ export default function Contact() {
                     {/* Social Media Links */}
                     <ul className="flex flex-row flex-nowrap justify-evenly gap-6 my-4">
                         <li>
-                            <Link href="https://twitter.com/heyojpro" title="Follow my Twitter Account">
+                            <Link href="https://twitter.com/heyojpro" title="Follow my Twitter Account" aria-label="My Twitter Account">
                                 <FiTwitter className="w-6 h-6 hover:fill-white hover:text-black"></FiTwitter>
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://linkedin.com/in/ojpro" title="My Account on Linkedin">
+                            <Link href="https://linkedin.com/in/ojpro" title="My Account on Linkedin" aria-label="My Linkedin">
                                 <FiLinkedin className="w-6 h-6 hover:fill-white hover:text-black"></FiLinkedin>
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://www.instagram.com/heyojpro" title="My Instagram Account">
+                            <Link href="https://www.instagram.com/heyojpro" title="My Instagram Account" aria-label="My Instagram">
                                 <FiInstagram className="w-6 h-6 hover:fill-white hover:text-black"></FiInstagram>
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://github.com/ojpro" title="Visit My Github Profile">
+                            <Link href="https://github.com/ojpro" title="Visit My Github Profile" aria-label="My Github">
                                 <FiGithub className="w-6 h-6 hover:fill-white hover:text-black"></FiGithub>
                             </Link>
                         </li>
                         <li>
-                            <Link href="mailto:work@ojpro.me" title="Send Me an Email">
+                            <Link href="mailto:work@ojpro.me" title="Send Me an Email" aria-label="Send me an Email">
                                 <HiOutlineMail
                                     className="w-7 h-7 hover:fill-white hover:text-black"></HiOutlineMail>
                             </Link>
@@ -216,29 +216,29 @@ export default function Contact() {
                 <div className="relative w-full max-w-lg p-4">
                     <form action="" onSubmit={handleSubmit}
                         className="flex flex-col flex-nowrap justify-start items-center gap-6">
-                        <label htmlFor="name" className="flex flex-col gap-2 w-full">
+                        <label htmlFor="name" className="flex flex-col gap-2 w-full" aria-label="Your Name">
                             <span>Full Name </span>
-                            <input type="text" value={name} id="name" onChange={validateName}
+                            <input role="textbox" type="text" value={name} id="name" onChange={validateName}
                                 className={`px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 focus:border-blue-600  ${validName == true ? 'border-gray-700' : 'border-red-400'}`}
                                required />
                             <span className="text-sm text-red-400 font-medium">{validName}</span>
                         </label>
-                        <label htmlFor="email" className="flex flex-col gap-2 w-full">
+                        <label htmlFor="email" className="flex flex-col gap-2 w-full" aria-label="Your Email">
                             <span>Email </span>
-                            <input type="email" value={email} id="email" onChange={validateEmail}
+                            <input type="email" role="textbox" value={email} id="email" onChange={validateEmail}
                                 className={`px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 focus:border-blue-600  ${validEmail == true ? 'border-gray-700' : 'border-red-400'}`}
                                 required/>
                             <span className="text-sm text-red-400 font-medium">{validEmail}</span>
                         </label>
-                        <label htmlFor="message" className="flex flex-col gap-2 w-full">
+                        <label htmlFor="message" className="flex flex-col gap-2 w-full" aria-label="Message Content">
                             <span>Message </span>
-                            <textarea name="" id="message" value={message} onChange={validateMessage}
+                            <textarea role="textbox" id="message" value={message} onChange={validateMessage}
                                 className={`px-3 py-2.5 rounded-md bg-gray-800 outline-none border-2 ${validMessage == true ? 'border-gray-700' : 'border-red-400'} focus:border-blue-600 h-24`}
                                required ></textarea>
                             <span className="text-sm text-red-400 font-medium">{validMessage}</span>
                         </label>
 
-                        <button
+                        <button aria-label="Send Message" name="Send Your Message" role="button" type="submit"
                             className={`px-7 py-2 rounded self-start group hover:shadow hover:shadow-blue-600 ${canSubmit ? 'bg-blue-600' : 'bg-blue-400 cursor-not-allowed'}`}>
                             Send
                             <FiSend className={`inline-block ml-2 group-hover:fill-white ${!canSubmit ? 'animate-pulse' : ''}`}></FiSend></button>

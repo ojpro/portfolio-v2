@@ -9,7 +9,7 @@ import coliving from "@/../public/images/coliving.png";
 export default function Work() {
     return (
         <>
-            <a href="#" id="work"></a>
+            <a href="#" id="work" aria-label="My Latest Projects"></a>
             <section className="container mx-auto px-8">
                 <h2 className="h2">My Work</h2>
 

@@ -16,7 +16,7 @@ export default function Footer() {
                 <p className="text-center text-white"> Make with <FaHeart
                     className="inline-block mx-2 text-red-500 hover:animate-ping"></FaHeart>
                     by
-                    <a href="https://ojpro.me/" className="text-md font-medium text-blue-200"> ojpro </a>
+                    <a href="https://ojpro.me/" className="text-md font-medium text-blue-200" title="My Portfolio Link" aria-label="My Portfolio Link"> ojpro </a>
                     | <RiCreativeCommonsFill
                     className="inline-block mx-2 text-xl"
                     title="Creative Common Attribution - (Your are free to use this website + attribution)"></RiCreativeCommonsFill> rights

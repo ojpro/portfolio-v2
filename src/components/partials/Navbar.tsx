@@ -36,7 +36,7 @@ export default function Example() {
     }
 
     return (
-        <Disclosure as="nav" className="backdrop-blur-sm fixed top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20">
+        <Disclosure as="nav" role='navigation' className="backdrop-blur-sm fixed top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20" aria-label="Navigation Menu">
             {({open}) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export default function Example() {
                             <div
                                 className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between p-4">
                                 <div className="flex flex-shrink-0 items-start">
-                                    <a href="#" className='text-lg font-bold'>
+                                    <a href="#" className='text-lg font-bold' role='link'>
                                         ojpro<span className="text-blue-300">.</span>me
                                     </a>
                                 </div>
@@ -53,6 +53,7 @@ export default function Example() {
                                         {navigation.map((item) => (
                                             <Link
                                                 onClick={() => updateNavigation(item)}
+                                                role="link"
                                                 key={item.name}
                                                 href={item.href}
                                                 title={item.name}
@@ -67,7 +68,7 @@ export default function Example() {
                                 </div>
                                 <div className="flex items-end sm:hidden">
                                     {/* Mobile menu button*/}
-                                    <Disclosure.Button
+                                    <Disclosure.Button role='button' type='button'
                                         className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
                                         <span className="sr-only">Open main menu</span>
                                         {open ? (
@@ -87,6 +88,7 @@ export default function Example() {
                                 <Disclosure.Button
                                     onClick={() => updateNavigation(item)}
                                     key={item.name}
+                                    role="link"
                                     as="a"
                                     href={item.href}
                                     aria-label={item.name}
