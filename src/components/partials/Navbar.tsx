@@ -36,7 +36,7 @@ export default function Example() {
     }
 
     return (
-        <Disclosure as="nav" className="backdrop-blur-sm fixed top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20">
+        <Disclosure as="nav" className="backdrop-blur-sm fixed top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20" aria-label="Navigation Menu">
             {({open}) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

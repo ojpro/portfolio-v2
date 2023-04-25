@@ -8,6 +8,7 @@ import Link from "next/link";
 export default function HeroSection() {
     return (
         <>
+            <a href="#" id="hero-section" aria-label="Hero Section"></a>
             <section className="h-[80vh] relative flex items-center pt-24 sm:pt-4 bg-black/40">
                 <div className="flex flex-row flex-wrap justify-evenly items-center gap-8 w-full p-8 pt-0">
                     <div className="max-w-lg flex flex-col gap-2">

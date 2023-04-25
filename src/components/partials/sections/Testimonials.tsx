@@ -5,7 +5,7 @@ import NotFound from "@/../public/images/clients/404.jpg";
 export default function Testimonials() {
     return (
         <>
-            <a href="#" id="testimonials"></a>
+            <a href="#" id="testimonials" aria-label="My Client's Feedback"></a>
             <section className="py-28">
                 <h2 className="h2">What People Says?</h2>
                 {/* <> Cards </> */}

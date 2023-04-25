@@ -10,7 +10,7 @@ import MyPicture from "@/../public/images/my-picture.jpeg";
 export default function About() {
     return (
         <>
-            <a href="#" id="about"></a>
+            <a href="#" id="about" aria-label="About Section"></a>
             <section className="min-h-screen relative flex flex-col justify-evenly items-center">
                 <div className="m-4">
                     <h2 className="h2">Who Am I?</h2>
@@ -18,7 +18,7 @@ export default function About() {
                         className="mx-auto p-4 flex flex-row flex-wrap justify-evenly items-center self-center gap-8">
                         <div
                             className="relative bg-gray-800 backdrop-blur-md dark:bg-opacity-80 hover:dark:bg-opacity-80 rounded-xl p-1 hover:rotate-2 shadow-2xl m-16 min-w-[300px] xl:order-2">
-                            <Image src={MyPicture}
+                            <Image src={MyPicture} aria-label="My Picture"
                                    className="w-80 h-fit rounded-2xl rotate-3 hover:-rotate-6 shadow-2xl backdrop-blur-md md:opacity-80 hover:opacity-100 hover:scale-105 contrast-125"
                                    alt="My Picture"/>
 
@@ -38,13 +38,13 @@ export default function About() {
                                 </p>
                             </div>
                             <div className="flex flex-row flex-wrap gap-4 justify-start mt-4">
-                                <Link href="#contact" title="Let's make business!"
+                                <Link href="#contact" title="Let's make business!" aria-label="Contact Me"
                                    className="py-2.5 px-4 bg-[#4462f5] text-white rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 hover:py-3 hover:px-5 group">
                                     Let&apos;s work
                                     <BsArrowRightShort
                                         className="w-6 h-auto group-hover:animate-ping"></BsArrowRightShort>
                                 </Link>
-                                <Link href="/documents/cv.pdf" target="_blank" title="My Resume"
+                                <Link href="/documents/cv.pdf" target="_blank" title="My Resume" aria-label="Open My Resume"
                                       className="py-2.5 px-4 bg-gray-800 text-gray-300 rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 border-2 border-transparent hover:border-blue-600 hover:translate-x-0.5 group">
                                     Want My Resume ?
                                     <FiExternalLink
