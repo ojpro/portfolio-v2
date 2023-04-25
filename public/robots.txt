@@ -1,0 +1,5 @@
+# allow all crawlers
+User-agent: *
+Allow: /
+Sitemap: https://ojpro.me/sitemap.xml
+Host: https://ojpro.me
