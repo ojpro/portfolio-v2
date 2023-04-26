@@ -10,13 +10,13 @@ export default function App({ Component, pageProps }: AppProps) {
             {/* Meta Tags */}
             <Head>
                 <meta charSet="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description"
                     content="Hey. I'am Oussama ELJABBARI, a Full-Stack Web Developer, and this is my portfolio where I share my work, projects, and achievements." />
                 <meta name="keywords"
                     content="ojpro,oussama eljabbari,full-stack web developer,web development,web design,ojpro portfolio,oussama ojpro,oussama portfolio" />
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="author" content="Oussama ELJabbari <contact@ojpro.me>" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
                 <meta name="mssmarttagspreventparsing" content="true" />
