@@ -12,9 +12,11 @@ export default function HeroSection() {
             <section className="h-[80vh] relative flex items-center pt-24 sm:pt-4 bg-black/40">
                 <div className="flex flex-row flex-wrap justify-evenly items-center gap-8 w-full p-8 pt-0">
                     <div className="max-w-lg flex flex-col gap-2">
-                        <span className="text-lg">Hey, I am Oussama 👨‍💻.</span>
-                        <h1 className="text-3xl font-extrabold">A Full-Stack Developer.</h1>
-                        <span className="text-xl text-gray-200 font-medium">I will help you make your ideas a real-online business</span>
+                        <h1>
+                            <span className="text-lg">Hey, I am Oussama 👨‍💻.</span>
+                            <span className="text-3xl font-extrabold">A Full-Stack Developer.</span>
+                            <span className="text-xl text-gray-200 font-medium">I will help you make your ideas a real-online business</span>
+                        </h1>
                     </div>
                     <Image src={IllustrationImage} alt="Website Development Services"
                         className="w-full md:w-1/3 h-auto" loading="eager" />
