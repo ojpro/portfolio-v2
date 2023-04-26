@@ -31,6 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <meta property="og:site_name" content="Oussama ELJABBARI's Portfolio" />
                 <meta property="article:modified_time" content="2023-04-06T17:09:32+00:00" />
                 <meta name="twitter:card" content="summary_large_image" />
+                <meta name="theme-color" content="#4462F5"/>
             </Head>
 
             <Script id='google-analytics-import-script' strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
