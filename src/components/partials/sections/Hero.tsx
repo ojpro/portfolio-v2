@@ -13,8 +13,8 @@ export default function HeroSection() {
                 <div className="flex flex-row flex-wrap justify-evenly items-center gap-8 w-full p-8 pt-0">
                     <div className="max-w-lg flex flex-col gap-2">
                         <h1>
-                            <span className="text-lg">Hey, I am Oussama 👨‍💻.</span>
-                            <span className="text-3xl font-extrabold">A Full-Stack Developer.</span>
+                            <span className="text-lg">Hey, I am Oussama 👨‍💻.</span><br/>
+                            <span className="text-3xl font-extrabold">A Full-Stack Developer.</span><br/>
                             <span className="text-xl text-gray-200 font-medium">I will help you make your ideas a real-online business</span>
                         </h1>
                     </div>
