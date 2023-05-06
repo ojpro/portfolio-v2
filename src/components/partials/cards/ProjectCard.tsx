@@ -11,15 +11,23 @@ export default function ProjectCard(props: {
     imageAlt: string,
     bgFrom: string,
     bgTo: string,
+    isNew?: boolean,
     previewLink: string,
     githubLink: string
 }) {
+    // set default value for isNew prop
+    const isNewProject = props.isNew || false;
+
     return (
-        <li className={"grid lg:grid-cols-2 p-1 group overflow-hidden rounded-xl bg-gradient-to-bl " + props.bgFrom + " " + props.bgTo}>
+        <li className={"relative grid lg:grid-cols-2 p-1 group overflow-hidden rounded-xl bg-gradient-to-bl " + props.bgFrom + " " + props.bgTo}>
+            {props.isNew && (
+                <span
+                    className='absolute top-2 right-2 bg-red-600 text-white px-3 py-2 rounded-md font-semibold'>New</span>
+            )}
             <div className="self-center container w-10/12 mx-auto lg:group-even:order-2">
                 <h3 className="text-3xl font-bold my-4">{props.title}</h3>
                 <p>{props.description}</p>
-                <a href="#" aria-label="Project Details" title="Project Details"
+                <a href={props.githubLink} aria-label="Project Details" title="Project Details"
                    className="my-4 inline-block border px-6 py-2 rounded-full text-black bg-white font-medium shadow">
                     <span>More Details </span>
                     <BiChevronRight className="inline-block"></BiChevronRight>
