@@ -44,7 +44,7 @@ export default function About() {
                                     <BsArrowRightShort
                                         className="w-6 h-auto group-hover:animate-ping"></BsArrowRightShort>
                                 </Link>
-                                <Link href="/documents/cv.pdf" target="_blank" title="My Resume" aria-label="Open My Resume" role="link"
+                                <Link href="/documents/resume.pdf" target="_blank" title="My Resume" aria-label="Open My Resume" role="link"
                                       className="py-2.5 px-4 bg-gray-800 text-gray-300 rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 border-2 border-transparent hover:border-blue-600 hover:translate-x-0.5 group">
                                     Want My Resume ?
                                     <FiExternalLink
