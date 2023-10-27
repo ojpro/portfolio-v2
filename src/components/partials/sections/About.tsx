@@ -20,7 +20,7 @@ export default function About() {
                             className="relative bg-gray-800 backdrop-blur-md dark:bg-opacity-80 hover:dark:bg-opacity-80 rounded-xl p-1 hover:rotate-2 shadow-2xl m-16 min-w-[300px] xl:order-2">
                             <Image src={MyPicture} aria-label="My Picture"
                                    className="w-80 h-fit rounded-2xl rotate-3 hover:-rotate-6 shadow-2xl backdrop-blur-md md:opacity-80 hover:opacity-100 hover:scale-105 contrast-125"
-                                   alt="My Picture" role="img"/>
+                                   alt="My Picture" role="img" loading='lazy'/>
 
                         </div>
                         <div className="max-w-3xl flex flex-col justify-between gap-4">
