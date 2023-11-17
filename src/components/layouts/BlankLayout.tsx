@@ -17,7 +17,7 @@ export default function BlankLayout({children}: { children: React.ReactNode }) {
         return <SplashScreen></SplashScreen>
     } else {
         return (
-            <main className="dark:bg-gray-900 dark:text-white">
+            <main className="dark:bg-gray-900 dark:text-white min-h-screen">
                 {children}
             </main>
         )

@@ -54,7 +54,7 @@ const Custom404 = () => {
                     </p>
 
                     <Link href="/" title="Let's make business!" aria-label="Contact Me" role="link"
-                          className="my-5 py-2.5 px-4 bg-[#4462f5] text-white rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 hover:py-3 hover:px-5 group max-w-fit mx-auto">
+                          className="my-5 py-2.5 px-4 bg-[#4462f5] text-white rounded-md flex flex-row flex-nowrap justify-evenly items-center gap-2 group max-w-fit mx-auto">
                         <BsArrowLeftShort
                             className="w-6 h-auto group-hover:animate-ping"></BsArrowLeftShort>
                         Let&apos;s Go Home
