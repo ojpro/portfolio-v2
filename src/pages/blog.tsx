@@ -1,4 +1,6 @@
 import {getSortedPostsData} from '@/lib/posts';
+import Link from "next/link";
+import Date from "@/components/partials/blog/Date";
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
@@ -15,11 +17,9 @@ export default function Blog({allPostsData}: { allPostsData: { slug: string, dat
         <div>
             {allPostsData.map(({slug, date, title}) => (
                 <li key={slug}>
-                    {title}
+                    <Link href={`/blog/${slug}`} className="text-blue-500">{title}</Link>
                     <br/>
-                    {slug}
-                    <br/>
-                    {date}
+                    <Date dateString={date}></Date>
                 </li>
             ))}
         </div>
