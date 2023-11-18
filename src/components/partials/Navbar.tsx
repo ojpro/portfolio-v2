@@ -10,7 +10,7 @@ interface Navigation {
     current: boolean
 }
 
-export default function Example() {
+export default function Navbar() {
 
     // navigation object's to store nav links
     const [navigation, setNavigation] = useState<Navigation[]>([
@@ -36,7 +36,7 @@ export default function Example() {
     }
 
     return (
-        <Disclosure as="nav" role='navigation' className="backdrop-blur-sm fixed top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20" aria-label="Navigation Menu">
+        <Disclosure as="nav" role='navigation' className="backdrop-blur-sm sticky top-0 left-0 right-0 bg-black/40 bg-opacity-60 z-20" aria-label="Navigation Menu">
             {({open}) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -44,9 +44,9 @@ export default function Example() {
                             <div
                                 className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between p-4">
                                 <div className="flex flex-shrink-0 items-start">
-                                    <a href="#" className='text-lg font-bold' role='link'>
+                                    <Link href="/" className='text-lg font-bold' role='link'>
                                         ojpro<span className="text-blue-300">.</span>me
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">

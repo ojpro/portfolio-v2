@@ -1,21 +1,18 @@
+import Head from "next/head";
 import {getAllPostSlugs, getPostData} from "@/lib/posts";
-import Head from 'next/head';
-import Date from "@/components/partials/blog/Date";
+import BlogLayout from "@/components/layouts/BlogLayout";
+import PostPage from "@/components/partials/blog/PostPage";
 
 export default function Post({postData}: { postData: { slug: number, title: string, date: string, contentHtml: string } }) {
     return (
         <>
-            <Head>
-                <title>{postData.title}</title>
-            </Head>
+            <BlogLayout>
+                <Head>
+                    <title>{postData.title}</title>
+                </Head>
 
-            {postData.title}
-            <br/>
-            {postData.slug}
-            <br/>
-            <Date dateString={postData.date}/>
-            <br/>
-            <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
+                <PostPage postData={postData}></PostPage>
+            </BlogLayout>
         </>
     );
 }

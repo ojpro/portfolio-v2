@@ -1,6 +1,6 @@
 import {getSortedPostsData} from '@/lib/posts';
-import Link from "next/link";
-import Date from "@/components/partials/blog/Date";
+import BlogLayout from "@/components/layouts/BlogLayout";
+import PostCard from "@/components/partials/blog/PostCard";
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
@@ -14,15 +14,16 @@ export async function getStaticProps() {
 
 export default function Blog({allPostsData}: { allPostsData: { slug: string, date: string, title: string }[] }) {
     return (
-        <div>
-            {allPostsData.map(({slug, date, title}) => (
-                <li key={slug}>
-                    <Link href={`/blog/${slug}`} className="text-blue-500">{title}</Link>
-                    <br/>
-                    <Date dateString={date}></Date>
-                </li>
-            ))}
-        </div>
+        <BlogLayout>
+            <div className="lg:w-1/2 mx-auto">
+                <h1 className="font-semibold text-3xl py-6 px-2">Blog</h1>
+                <div>
+                    {allPostsData.map((postData) => (
+                        <PostCard postData={postData}></PostCard>
+                    ))}
+                </div>
+            </div>
+        </BlogLayout>
 
     );
 }
