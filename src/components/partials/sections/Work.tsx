@@ -2,10 +2,10 @@
 import ProjectCard from "@/components/partials/cards/ProjectCard";
 
 // import project screenshots
-import executive from "@/../public/images/executive.png";
-import steakhouse from "@/../public/images/steakhouse.png";
-import coliving from "@/../public/images/coliving.png";
-import survey from "@/../public/images/survey.png";
+import executive from "@/../public/images/projects/executive.png";
+import steakhouse from "@/../public/images/projects/steakhouse.png";
+import coliving from "@/../public/images/projects/coliving.png";
+import survey from "@/../public/images/projects/survey.png";
 
 export default function Work() {
     return (
