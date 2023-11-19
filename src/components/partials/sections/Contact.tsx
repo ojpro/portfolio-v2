@@ -70,7 +70,7 @@ export default function Contact() {
             setCanSubmit(false);
         }
         else {
-            // otherwise back to defaul
+            // otherwise back to default
             setValidEmail(true);
 
             // enable form
@@ -81,7 +81,7 @@ export default function Contact() {
     // client message validation
     const validateMessage = (e: any) => {
 
-        // store the given email
+        // store the given message
         let message = e.target.value;
 
         // update the state
@@ -95,7 +95,7 @@ export default function Contact() {
             setCanSubmit(false);
         }
         else {
-            // otherwise back to defaul
+            // otherwise back to default
             setValidMessage(true);
 
             // enable form
@@ -125,7 +125,7 @@ export default function Contact() {
             return
         }
 
-        // dont prcess until all the fields are valid
+        // don't process until all the fields are valid
         if (validName && validEmail && validMessage) {
             // disable submit button with a little effects
             setCanSubmit(false);
@@ -149,7 +149,7 @@ export default function Contact() {
                     'success'
                 )
 
-                // after the modal dimiss return the button to it state
+                // after the modal dismiss return the button to it state
                 setCanSubmit(true);
 
                 // clear all the inputs
