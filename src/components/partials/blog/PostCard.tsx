@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Date from "@/components/partials/blog/Date";
 
-export default function PostCard({postData}: { postData: { slug: string, title: string , date: string} }) {
+export default function PostCard({postData}: { postData: { slug: string, title: string , date: string, thumbnail: string , keywords: string} }) {
     return (
         <>
             <div className="p-4 border dark:border-gray-800 my-4">

@@ -12,14 +12,14 @@ export async function getStaticProps() {
 }
 
 
-export default function Blog({allPostsData}: { allPostsData: { slug: string, date: string, title: string }[] }) {
+export default function Blog({allPostsData}: { allPostsData: { slug: string, date: string, title: string, thumbnail: string , keywords: string}[] }) {
     return (
         <BlogLayout>
             <div className="lg:w-1/2 mx-auto">
                 <h1 className="font-semibold text-3xl py-6 px-2">Blog</h1>
                 <div>
                     {allPostsData.map((postData) => (
-                        <PostCard postData={postData}></PostCard>
+                        <PostCard postData={postData} key={postData.slug}></PostCard>
                     ))}
                 </div>
             </div>

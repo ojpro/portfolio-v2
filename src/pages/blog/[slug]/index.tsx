@@ -3,7 +3,7 @@ import {getAllPostSlugs, getPostData} from "@/lib/posts";
 import BlogLayout from "@/components/layouts/BlogLayout";
 import PostPage from "@/components/partials/blog/PostPage";
 
-export default function Post({postData}: { postData: { slug: number, title: string, date: string, contentHtml: string } }) {
+export default function Post({postData}: { postData: { slug: number, title: string, date: string, contentHtml: string, thumbnail: string, keywords: string} }) {
     return (
         <>
             <BlogLayout>
