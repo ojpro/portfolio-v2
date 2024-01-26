@@ -6,6 +6,7 @@ import executive from "@/../public/images/projects/executive.png";
 import steakhouse from "@/../public/images/projects/steakhouse.png";
 import coliving from "@/../public/images/projects/coliving.png";
 import survey from "@/../public/images/projects/survey.png";
+import bmiApp from "@/../public/images/bmi-app.png";
 
 export default function Work() {
     return (
@@ -18,6 +19,13 @@ export default function Work() {
                 {/* <> Projects Card </> */}
                 <div className="w-11/12 mx-auto">
                     <ul className="flex flex-col justify-between gap-16">
+
+                        <ProjectCard title="BMI App" description="Simple BMI app - Keep track of your weight in an easy way"
+                                     image={bmiApp}
+                                     isNew
+                                     imageAlt="BMI Application" bgFrom="from-[#16b8fe]"
+                                     bgTo="to-[#4bde4e]" previewLink="#"
+                                     githubLink="https://github.com/ojpro/bmi-calculator-app"/>
 
                         <ProjectCard title="Surveys" description="Surveys - Full System to manage your surveys"
                                      image={survey}
