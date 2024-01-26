@@ -27,8 +27,11 @@ export default function About() {
                             <div className="group flex flex-col flex-nowrap justify-between gap-5">
                                 <h3 className="text-2xl font-medium">Hey <span
                                     className="group-hover:animate-bounce inline-block">👋</span>,</h3>
-                                <h4 className="text-4xl font-bold">I make the website that will achieve your <span
-                                    className="relative inline-block after:absolute after:pointer-events-none after:w-full after:h-2 after:-bottom-1 after:left-0 after:bg-yellow-400  after:bg-opacity-90 after:-z-10 z-10 after:rounded-sm after:-rotate-1">business goal.</span>
+                                <h4 className="text-4xl font-bold leading-10">I code
+                                    <span
+                                        className="relative inline-block after:absolute after:pointer-events-none after:w-full after:h-2 after:-bottom-1 after:left-0 after:bg-blue-400  after:bg-opacity-90 after:-z-10 z-10 after:rounded-sm after:-rotate-1">&nbsp;solutions&nbsp;</span>
+                                    that elevate your applications to <span
+                                        className="relative inline-block after:absolute after:pointer-events-none after:w-full after:h-2 after:-bottom-1 after:left-0 after:bg-yellow-400  after:bg-opacity-90 after:-z-10 z-10 after:rounded-sm after:-rotate-1">new heights!.</span>
                                 </h4>
                                 <p className="text-gray-200 text-lg">
                                     I&apos;m Oussama, a Full-Stack Developer. I work as a freelancer, using my skills to
