@@ -1,10 +1,11 @@
-import { FiGithub, FiInstagram, FiLinkedin, FiSend, FiTwitter } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
-import { ChangeEventHandler, useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+import { FaXTwitter } from "react-icons/fa6";
+import { FiGithub, FiInstagram, FiLinkedin, FiSend } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 
 // Import SweetAlert
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 export default function Contact() {
     // initialize form field
@@ -184,8 +185,8 @@ export default function Contact() {
                     {/* Social Media Links */}
                     <ul className="flex flex-row flex-nowrap justify-evenly gap-6 my-4">
                         <li>
-                            <Link href="https://twitter.com/heyojpro" title="Follow my Twitter Account" aria-label="My Twitter Account">
-                                <FiTwitter className="w-6 h-6 hover:fill-white hover:text-black"></FiTwitter>
+                            <Link href="https://x.com/heyoussama" title="Follow my X Account" aria-label="My X Account">
+                                <FaXTwitter className="w-6 h-6 hover:fill-white hover:text-black"></FaXTwitter>
                             </Link>
                         </li>
                         <li>
